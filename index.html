@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Virtual Shopping Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg"></div>
+
+<div class="top-bar">
+    <h2>🛍 AI Shopping Assistant</h2>
+    <button onclick="toggleMode()">🌙</button>
+</div>
+
+<div class="container">
+
+    <button class="mic-btn" onclick="startListening()">🎤 Voice Search</button>
+
+    <div class="manual-search">
+        <input type="text" id="searchInput" placeholder="Type product name">
+        <button onclick="manualSearch()">Search</button>
+    </div>
+
+    <div id="status">Say or type product name (e.g., laptop, phone)</div>
+
+    <div id="products" class="products"></div>
+
+    <div class="cart-section">
+        <h3>🛒 Cart</h3>
+        <div id="cart"></div>
+        <p id="total">Total: ₹0</p>
+        <button class="pay-btn" onclick="simulatePayment()">Proceed to Pay</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
